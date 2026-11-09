@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Games for Kids</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#14122b; --card:#221f45; --ink:#f4f1ff; --muted:#a9a3d6; --accent:#ffcf4a; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; font-family:'Fredoka',system-ui,sans-serif; color:var(--ink);
+         background: radial-gradient(1200px 600px at 20% -10%, #3a2f8a 0%, transparent 60%),
+                     radial-gradient(900px 500px at 110% 10%, #7a2f6e 0%, transparent 55%), var(--bg); }
+  header { text-align:center; padding:56px 20px 28px; }
+  h1 { margin:0; font-size:clamp(2.2rem,6vw,3.6rem); letter-spacing:.5px; }
+  h1 span { color:var(--accent); }
+  header p { margin:10px 0 0; color:var(--muted); font-size:1.1rem; }
+  main { max-width:1080px; margin:0 auto; padding:12px 20px 64px;
+         display:grid; gap:20px; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); }
+  a.card { display:flex; flex-direction:column; gap:10px; padding:22px; border-radius:20px; text-decoration:none;
+           color:inherit; background:var(--card); border:2px solid transparent;
+           transition:transform .15s ease, border-color .15s ease; }
+  a.card:hover, a.card:focus-visible { transform:translateY(-4px); border-color:var(--accent); outline:none; }
+  .emoji { font-size:2.6rem; line-height:1; }
+  .card h2 { margin:0; font-size:1.35rem; }
+  .card p { margin:0; color:var(--muted); font-size:.98rem; line-height:1.4; }
+  .play { margin-top:auto; color:var(--accent); font-weight:600; }
+  footer { text-align:center; color:var(--muted); font-size:.85rem; padding-bottom:32px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Games <span>for</span> Kids</h1>
+  <p>Escolha um jogo e divirta-se!</p>
+</header>
+<main>
+  <a class="card" href="cade-o-antonio/"><div class="emoji">🐕</div><h2>Cadê o Antonio?</h2><p>Uma aventura de plataforma para encontrar o Antonio, o whippet fujão.</p><span class="play">Jogar ▶</span></a>
+  <a class="card" href="ecos-de-lumen/"><div class="emoji">✨</div><h2>Ecos de Lúmen</h2><p>Cena 1: A Praia Sem Cor. Devolva a luz a Brisalva com magia.</p><span class="play">Jogar ▶</span></a>
+  <a class="card" href="kesto-quatro-formas/"><div class="emoji">🤖</div><h2>Kesto: Quatro Formas</h2><p>Um robô troca entre quatro formas para explorar ruínas e vencer o Sentinela.</p><span class="play">Jogar ▶</span></a>
+  <a class="card" href="necropole/"><div class="emoji">🏛️</div><h2>Necrópole</h2><p>Um necromante exilado atravessa cinco terras com seu exército de mortos-vivos.</p><span class="play">Jogar ▶</span></a>
+  <a class="card" href="campo-minado-zumbi/"><div class="emoji">🧟</div><h2>Campo Minado Zumbi</h2><p>O clássico campo minado, agora com zumbis escondidos.</p><span class="play">Jogar ▶</span></a>
+  <a class="card" href="xadrez-dos-monstros/"><div class="emoji">♟️</div><h2>Xadrez dos Monstros 3D</h2><p>Xadrez em 3D com peças de monstros.</p><span class="play">Jogar ▶</span></a>
+</main>
+<footer>Games for Kids</footer>
+</body>
+</html>
